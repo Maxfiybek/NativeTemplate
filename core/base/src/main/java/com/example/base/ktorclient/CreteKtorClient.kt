@@ -1,6 +1,6 @@
 package com.example.base.ktorclient
 
-import com.example.base.utils.BaseUrl
+import com.example.data.localStorage.LocalStorage
 import io.ktor.client.HttpClient
 import io.ktor.client.HttpClientConfig
 import io.ktor.client.engine.cio.CIO
@@ -14,10 +14,9 @@ import io.ktor.http.ContentType
 import io.ktor.http.contentType
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
-import com.example.data.localStorage.LocalStorage
 
-private const val Header = "Authorization"
-private const val Bearer = "Bearer"
+private const val Authorization = "Authorization"
+const val BaseUrl = "base url here"
 
 internal fun createHttpClient(json: Json, localStorage: LocalStorage) = HttpClient(CIO) {
     expectSuccess = true
@@ -25,7 +24,7 @@ internal fun createHttpClient(json: Json, localStorage: LocalStorage) = HttpClie
         json(json)
     }
     install(DefaultRequest) {
-        header(Header, "$Bearer ${localStorage.accessToken}")
+        header(Authorization, localStorage.accessToken)
         url(BaseUrl)
         contentType(ContentType.Application.Json)
     }
