@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.wallpaperapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.wallpaperapp"
@@ -62,4 +62,5 @@ dependencies {
     implementation(libs.koin.compose)
 
     //Modules here
+    implementation(project(":feature"))
 }

@@ -71,4 +71,4 @@ ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 #Convention Plugins
 virtualbank-android = { id = "virtualbank.android", version = "unspecified" }
 virtualbank-compose = { id = "virtualbank.compose", version = "unspecified" }
-virtualbank-feature = { id = "virtualbank.feature", version = "unspecified" }
+wallpaper-feature = { id = "virtualbank.feature", version = "unspecified" }
