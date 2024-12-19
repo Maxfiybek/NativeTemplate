@@ -1,15 +1,18 @@
 plugins {
-    id("java-library")
-    alias(libs.plugins.jetbrains.kotlin.jvm)
+    alias(libs.plugins.virtualbank.android)
+    alias(libs.plugins.virtualbank.compose)
 }
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
-}
+android {
+    dependencies {
+        implementation(libs.ktor.client.core)
+        implementation(libs.ktor.client.cio)
+        implementation(libs.ktor.client.okhttp)
+        implementation(libs.ktor.client.logging)
+        implementation(libs.ktor.client.contentNegotiation)
+        implementation(libs.ktor.client.serialization.json)
+        implementation(projects.core.coreUi)
 
-kotlin {
-    compilerOptions {
-        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
+        implementation(projects.core.data)
     }
 }

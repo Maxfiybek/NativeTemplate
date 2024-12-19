@@ -21,7 +21,7 @@ dependencyResolutionManagement {
 }
 
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
-rootProject.name = "WallpaperApp"
+rootProject.name = "NativeTemplate"
 include(":app")
 include(":feature")
 include(":feature:splash")

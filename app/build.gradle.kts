@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.wallpaperapp"
+    namespace = "com.example.nativetemplate"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.wallpaperapp"
+        applicationId = "com.example.nativetemplate"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -62,5 +62,8 @@ dependencies {
     implementation(libs.koin.compose)
 
     //Modules here
+    implementation(projects.core.data)
+    implementation(projects.core.base)
+    implementation(projects.core.coreUi)
     implementation(projects.feature.splash)
 }

@@ -14,9 +14,9 @@ class FeatureConventionPlugin : Plugin<Project> {
                 apply(libs.getPluginId("virtualbank.compose"))
             }
             dependencies {
-//                implementation(project(":core:base"))
-//                implementation(project(":core:core-ui"))
-//                implementation(project(":core:data"))
+                implementation(project(":core:base"))
+                implementation(project(":core:core-ui"))
+                implementation(project(":core:data"))
                 implementation(findLibrary("immutable-list"))
                 implementation(findLibrary("navigation.compose"))
                 implementation(findLibrary("ktor.client.core"))

@@ -1,15 +1,12 @@
 plugins {
-    id("java-library")
-    alias(libs.plugins.jetbrains.kotlin.jvm)
+    alias(libs.plugins.virtualbank.android)
+    alias(libs.plugins.ksp)
 }
-
-java {
-    sourceCompatibility = JavaVersion.VERSION_11
-    targetCompatibility = JavaVersion.VERSION_11
-}
-
-kotlin {
-    compilerOptions {
-        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_11
+android {
+    dependencies {
+        implementation(libs.room.runtime)
+        ksp(libs.room.compiler)
+        implementation(libs.room.ktx)
+        implementation(libs.room.paging)
     }
 }

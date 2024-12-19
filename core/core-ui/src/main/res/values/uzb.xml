@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Auth -->
+    <string name="sign_in">Tizimga kirish</string>
+    <string name="sign_up">Ro`yxatdan o`tish</string>
+    <string name="gender">Jins</string>
+    <string name="male">Erkak</string>
+    <string name="female">Ayol</string>
+    <string name="error">Hatolik</string>
+    <string name="create_your_account">Hatolik</string>
+    <string name="create_phone_password">Telefon raqam va parol ni kiriting</string>
+    <string name="password">Parol</string>
+    <string name="except_password">Parolni tasdiqlang</string>
+    <string name="phone_or_password_incorrect">Parol yoki Telefon raqam no`to`g`ri kiritilgan</string>
+    <string name="name">Ism</string>
+    <string name="lastName">Familya</string>
+    <string name="select_current_time">Tanlangan vaqtni olish</string>
+    <string name="cancel">Bekor qilish</string>
+    <string name="create_account">Akkaunt yaratish</string>
+    <string name="password_not_match">Parollar bir biriga mos emas!</string>
+</resources>
