@@ -62,5 +62,5 @@ dependencies {
     implementation(libs.koin.compose)
 
     //Modules here
-    implementation(project(":feature"))
+    implementation(projects.feature.splash)
 }
