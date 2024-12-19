@@ -16,7 +16,7 @@ import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
 
 private const val Authorization = "Authorization"
-const val BaseUrl = "base url here"
+const val BaseUrl = "Url"
 
 internal fun createHttpClient(json: Json, localStorage: LocalStorage) = HttpClient(CIO) {
     expectSuccess = true
