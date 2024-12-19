@@ -1,3 +1,3 @@
 plugins {
-    alias(libs.plugins.wallpaper.feature)
+    alias(libs.plugins.native.template.feature)
 }

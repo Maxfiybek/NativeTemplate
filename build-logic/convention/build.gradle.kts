@@ -2,7 +2,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "uz.cdti.buildlogic"
+group = "com.example.buildlogic"
 
 dependencies {
     compileOnly(libs.android.gradlePlugin)
@@ -12,15 +12,15 @@ dependencies {
 gradlePlugin {
     plugins {
         register("application") {
-            id = "virtualbank.android"
+            id = "android.plugin.id"
             implementationClass = "BaseAndroidLibraryConventionPlugin"
         }
         register("compose") {
-            id = "virtualbank.compose"
+            id = "compose.plugin.id"
             implementationClass = "ComposeConventionPlugin"
         }
         register("feature") {
-            id = "virtualbank.feature"
+            id = "feature.plugin.id"
             implementationClass = "FeatureConventionPlugin"
         }
     }

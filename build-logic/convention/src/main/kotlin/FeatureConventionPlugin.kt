@@ -10,8 +10,8 @@ class FeatureConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply(libs.getPluginId("virtualbank.android"))
-                apply(libs.getPluginId("virtualbank.compose"))
+                apply(libs.getPluginId("native.template.android"))
+                apply(libs.getPluginId("native.template.compose"))
             }
             dependencies {
                 implementation(project(":core:base"))

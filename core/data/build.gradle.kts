@@ -1,5 +1,5 @@
 plugins {
-    alias(libs.plugins.virtualbank.android)
+    alias(libs.plugins.native.template.android)
     alias(libs.plugins.ksp)
 }
 android {

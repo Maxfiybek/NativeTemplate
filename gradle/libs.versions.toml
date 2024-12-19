@@ -69,6 +69,6 @@ kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 
 #Convention Plugins
-virtualbank-android = { id = "virtualbank.android", version = "unspecified" }
-virtualbank-compose = { id = "virtualbank.compose", version = "unspecified" }
-wallpaper-feature = { id = "virtualbank.feature", version = "unspecified" }
+native-template-android = { id = "android.plugin.id", version = "unspecified" }
+native-template-compose = { id = "compose.plugin.id", version = "unspecified" }
+native-template-feature = { id = "feature.plugin.id", version = "unspecified" }

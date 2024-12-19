@@ -1,6 +1,6 @@
 plugins {
-    alias(libs.plugins.virtualbank.android)
-    alias(libs.plugins.virtualbank.compose)
+    alias(libs.plugins.native.template.android)
+    alias(libs.plugins.native.template.compose)
 }
 
 android {
