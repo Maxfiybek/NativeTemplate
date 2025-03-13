@@ -2,7 +2,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.example.buildlogic"
+group = "com.example.nativetemplate.buildlogic"
 
 dependencies {
     compileOnly(libs.android.gradlePlugin)

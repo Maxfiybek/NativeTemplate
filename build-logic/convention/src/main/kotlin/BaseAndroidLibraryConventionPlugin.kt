@@ -1,13 +1,13 @@
 import com.android.build.api.dsl.LibraryExtension
+import com.example.nativetemplate.conventions.extensions.findLibrary
+import com.example.nativetemplate.conventions.extensions.getPluginId
+import com.example.nativetemplate.conventions.extensions.implementation
 import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.getByType
-import com.example.convention.findLibrary
-import com.example.convention.getPluginId
-import com.example.convention.implementation
-import uz.cdti.convention.libs
+import com.example.nativetemplate.conventions.extensions.libs
 
 class BaseAndroidLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {

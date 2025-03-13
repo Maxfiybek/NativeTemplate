@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.compose.rememberNavController
-import com.example.core_ui.theme.PrimaryTheme
+import com.example.nativetemplate.core_ui.theme.PrimaryTheme
 import com.example.nativetemplate.navigation.NativeAppNavigation
 
 class MainActivity : ComponentActivity() {

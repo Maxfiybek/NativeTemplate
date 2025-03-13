@@ -1,10 +1,10 @@
+import com.example.nativetemplate.conventions.extensions.findLibrary
+import com.example.nativetemplate.conventions.extensions.getPluginId
+import com.example.nativetemplate.conventions.extensions.implementation
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies
-import com.example.convention.findLibrary
-import com.example.convention.getPluginId
-import com.example.convention.implementation
-import uz.cdti.convention.libs
+import com.example.nativetemplate.conventions.extensions.libs
 
 class ComposeConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
