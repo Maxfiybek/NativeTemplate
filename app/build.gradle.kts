@@ -5,13 +5,13 @@ plugins {
 }
 
 android {
-    namespace = "com.example.nativetemplate"
-    compileSdk = 35
+    namespace = libs.versions.packageName.get()
+    compileSdk = libs.versions.compileSdk.get().toIntOrNull()
 
     defaultConfig {
-        applicationId = "com.example.nativetemplate"
-        minSdk = 24
-        targetSdk = 34
+        applicationId = libs.versions.packageName.get()
+        minSdk = libs.versions.minSdk.get().toIntOrNull()
+        targetSdk = libs.versions.compileSdk.get().toIntOrNull()
         versionCode = 1
         versionName = "1.0"
 
